@@ -1,6 +1,6 @@
 buildscript {
     repositories {
-        mavenCentral()
+        jcenter()
         google()
     }
     dependencies {
@@ -12,7 +12,7 @@ allprojects {
     repositories {
         mavenLocal()
         google()
-        mavenCentral()
+        jcenter()
         maven {
             url 'https://maven.google.com'
         }
@@ -27,8 +27,8 @@ allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion "28.0.3"
+    compileSdkVersion 31
+    buildToolsVersion "31.0.0"
 
     defaultConfig {
         minSdkVersion 16
@@ -50,6 +50,6 @@ dependencies {
     implementation 'com.facebook.react:react-native:+'
     implementation 'com.google.firebase:firebase-core:16.0.1'
     implementation 'com.google.firebase:firebase-messaging:17.3.4'
-    implementation 'com.pusher:push-notifications-android:1.9.0'
+    implementation 'com.pusher:push-notifications-android:1.4.5'
 
 }
